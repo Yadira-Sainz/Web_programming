@@ -1,0 +1,154 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    font-family: 'Montserrat', sans-serif;
+    background-color: #f4f4f4;
+    overflow: auto;
+}
+
+.container {
+    display: flex;
+    width: 100%;
+    height: auto;
+}
+
+.left-column, .right-column {
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.left-column {
+    width: 40%;
+    background: #fff6e8;
+}
+
+.right-column {
+    width: 60%;
+    background: #fff;
+}
+
+/* Estilo para las líneas divisoras */
+.right-column h3 {
+    border-bottom: 2px solid #e8c39e; /* Línea divisora de color */
+    padding-bottom: 5px; /* Espacio entre el texto y la línea */
+    margin-bottom: 20px; /* Espacio entre la línea y el contenido siguiente */
+}
+
+.custom-title {
+    font-family: 'Playfair Display', cursive;
+    font-size: 4em;
+    font-weight: bold;
+    color: #2f2622;
+    margin: 0;
+    margin-right: 110px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2); /* Sombra suave */
+}
+
+.secondary-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 2.5em;
+    font-weight: normal;
+    color: #333;
+    margin-left: 300px;
+    margin-top: -10px;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1); /* Sombra ligera */
+}
+
+
+
+
+.highlight, .highlightText {
+    padding: 10px;
+    background-color: #e8c39e;
+    color: #2f2622;
+    border-radius: 5px;
+    display: inline-block;
+    width: auto;
+    box-sizing: border-box;
+}
+
+header {
+    text-align: center;
+    padding: 20px;
+}
+
+header h1 {
+    text-transform: uppercase;
+    margin: 0;
+}
+
+header h2 {
+    margin: 0;
+    font-weight: normal;
+}
+
+.profile-pic {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    object-fit: cover;
+    display: block;
+    margin: 20px auto;
+    border: 5px solid #e8c39e;
+}
+
+section h3 {
+    padding-bottom: 10px;
+}
+
+.contact-info, .languages {
+    display: flex;
+    flex-direction: column;
+}
+
+.languages ul {
+    list-style: none;
+    padding: 0;
+}
+
+.languages li {
+    margin-bottom: 5px;
+}
+
+.language {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    justify-content: space-between;
+}
+
+.language-name {
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+.language-progress {
+    display: flex;
+    align-items: center;
+    width: 70%;
+}
+
+.progress-bar {
+    background-color: #e8c29d;
+    border-radius: 5px;
+    overflow: hidden;
+    width: 100%;
+    height: 20px;
+    margin-right: 10px;
+}
+
+.progress {
+    background-color: #ebe4d9;
+    height: 100%;
+    text-align: center;
+    color: white;
+    line-height: 20px;
+    border-radius: 5px;
+}
+
+.language-level {
+    font-size: 0.9em;
+    color: #333;
+}
