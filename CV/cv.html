@@ -12,6 +12,7 @@
 </head>
 <body>
     <div class="container">
+        <button id="toggle-dark-mode" class="mode-toggle-btn">Modo Oscuro</button>
         <div class="left-column">
             <img src="imagen.png" alt="Foto de Yadira" class="profile-pic">
             <section class="contact-info">
@@ -42,6 +43,29 @@
                     <p>Instituto Enrique Rebsamen</p>
                 </div>
             </section>
+            <section class="projects-gallery">
+                <h3><div class="highlight">Galería de Proyectos</div></h3>
+                <div class="gallery-container">
+                    <div class="gallery-item">
+                        <img src="proyecto1.jpg" alt="Proyecto 1">
+                    </div>
+                    <div class="gallery-item">
+                        <img src="proyecto2.jpg" alt="Proyecto 2">
+                    </div>
+                    <div class="gallery-item">
+                        <img src="proyecto3.jpg" alt="Proyecto 3">
+                    </div>
+                    <div class="gallery-item">
+                        <img src="proyecto4.jpg" alt="Proyecto 4">
+                    </div>
+                </div>
+            </section>
+
+            <!-- Modal para mostrar imagen en grande -->
+            <div id="modal" class="modal">
+                <span class="close">&times;</span>
+                <img class="modal-content" id="modal-img">
+            </div>
         </div>
         <div class="right-column">
             <header>
@@ -49,7 +73,9 @@
                 <h1 class="secondary-title">Sainz Rivera</h1>
             </header>
             <header>
-                <h2><div class="highlightText">Estudiante Ing. en Sistemas Computacionales / Lic. Recursos Humanos</div></h2>
+                <h2><div class="highlightText">
+                <!-- Estudiante Ing. en Sistemas Computacionales / Lic. Recursos Humanos -->
+            </div></h2>
             </header>
             <section>
                 <h3>Áreas de Interés / Objetivo</h3>
@@ -85,7 +111,7 @@
                     <span class="language-name">Español:</span>
                     <div class="language-progress">
                         <div class="progress-bar">
-                            <div class="progress" style="width: 100%;"></div>
+                            <div class="progress" data-progress="100%"></div>
                         </div>
                         <span class="language-level">Nativo</span>
                     </div>
@@ -94,13 +120,82 @@
                     <span class="language-name">Inglés:</span>
                     <div class="language-progress">
                         <div class="progress-bar">
-                            <div class="progress" style="width: 60%;"></div>
+                            <div class="progress" data-progress="60%"></div>
                         </div>
                         <span class="language-level">Intermedio</span>
                     </div>
                 </div>
             </section>
+            <section class="skills">
+                <h3>Habilidades</h3>
+                <div class="skill">
+                    <span class="skill-name">Java:</span>
+                    <div class="skill-progress">
+                        <div class="progress-bar">
+                            <div class="progress" data-progress="90%"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="skill">
+                    <span class="skill-name">C++:</span>
+                    <div class="skill-progress">
+                        <div class="progress-bar">
+                            <div class="progress" data-progress="90%"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="skill">
+                    <span class="skill-name">Python:</span>
+                    <div class="skill-progress">
+                        <div class="progress-bar">
+                            <div class="progress" data-progress="50%"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="skill">
+                    <span class="skill-name">JavaScript:</span>
+                    <div class="skill-progress">
+                        <div class="progress-bar">
+                            <div class="progress" data-progress="60%"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="skill">
+                    <span class="skill-name">HTML:</span>
+                    <div class="skill-progress">
+                        <div class="progress-bar">
+                            <div class="progress" data-progress="50%"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="skill">
+                    <span class="skill-name">CSS:</span>
+                    <div class="skill-progress">
+                        <div class="progress-bar">
+                            <div class="progress" data-progress="50%"></div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="contact-form">
+                <h3>Contacto</h3>
+                <form id="contact-form">
+                    <label for="name">Nombre:</label>
+                    <input type="text" id="name" name="name" required>
+
+                    <label for="email">Correo Electrónico:</label>
+                    <input type="email" id="email" name="email" required>
+
+                    <label for="message">Mensaje:</label>
+                    <textarea id="message" name="message" rows="5" required></textarea>
+
+                    <button type="submit">Enviar</button>
+                    <p id="form-feedback"></p>
+                </form>
+            </section>
         </div>
     </div>
+    <script src="script.js" defer></script> <!-- Vincula el archivo de JavaScript -->
 </body>
 </html>
+
