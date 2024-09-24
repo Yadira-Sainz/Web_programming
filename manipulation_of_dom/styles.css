@@ -1,0 +1,116 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0;
+  padding: 20px;
+}
+h1, h2 {
+  text-align: center;
+}
+.container {
+  max-width: 600px;
+  margin: auto;
+}
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+ul li {
+  background-color: #e3e3e3;
+  margin: 5px 0;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.counter {
+  display: flex;
+  justify-content: space-around;
+  margin: 20px 0;
+}
+.gallery {
+  position: relative;
+  text-align: center; /* Centra el contenido dentro de la galería */
+}
+.gallery img {
+  max-width: 100%;
+  display: block;
+  margin: auto;
+  transition: opacity 0.5s ease; /* Transición suave */
+}
+.gallery-controls {
+  display: flex;
+  justify-content: flex-end; /* Alinea los botones a la derecha */
+  margin-top: 10px; /* Separación entre la imagen y los botones */
+}
+.gallery-controls button {
+  margin-left: 10px; /* Espacio entre los botones */
+  padding: 10px 20px;
+  background-color: #007BFF;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.gallery-controls button:hover {
+  background-color: #0056b3;
+}
+button {
+  padding: 10px 15px;
+  background-color: #007BFF;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-left: 10px; 
+}
+button:hover {
+  background-color: #0056b3;
+}
+.button-container {
+  display: flex;
+  justify-content: flex-end;  /* Alinea los botones a la derecha */
+  margin-bottom: 10px;        /* Añade un margen inferior para separar botones de otros elementos */
+}
+.styled-element {
+  padding: 10px;
+  background-color: lightgrey;
+  margin-top: 10px;
+  text-align: center;
+}
+.input-field {
+  margin: 10px 0;
+  padding: 10px;
+  border: 1px solid #ccc;
+}
+.error {
+  color: red;
+  text-align: center;
+  margin: 10px 0;
+}
+header {
+  text-align: center; /* Centrar el título */
+}
+#changeColorContainer {
+  text-align: right; /* Alinea el contenido a la derecha */
+  margin-top: 10px;  /* Añade espacio entre el título y el botón */
+}
+#changeColorBtn {
+  padding: 10px 15px;
+  background-color: #007BFF;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+#changeColorBtn:hover {
+  background-color: #0056b3;
+}
+input[type="text"] {
+  width: 100%;          /* Asegura que el campo de texto ocupe todo el ancho del contenedor */
+  padding: 12px 15px;    /* Aumenta el espacio interno del campo de texto */
+  font-size: 16px;       /* Aumenta el tamaño de la fuente para que el texto dentro se vea más grande */
+  margin: 10px 0;        /* Añade margen para separar los campos de texto de otros elementos */
+  border: 1px solid #ccc; /* Mantiene un borde simple */
+  border-radius: 5px;    /* Añade bordes redondeados */
+  box-sizing: border-box; /* Asegura que el padding esté incluido dentro del ancho total */
+}

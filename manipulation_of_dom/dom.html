@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Práctica DOM</title>
+  <link rel="stylesheet" href="styles.css"> 
+</head>
+<body>
+  <div class="container">
+    <!-- Header con cambio de color de fondo -->
+    <header>
+      <h1>Manipulación del DOM con JavaScript</h1>
+      <div id="changeColorContainer">
+        <button id="changeColorBtn">Cambiar color de fondo</button>
+      </div>
+    </header>
+    
+    <!-- Lista dinámica -->
+    <section>
+      <h2>Lista dinámica</h2>
+      <input type="text" id="itemInput" placeholder="Añadir un elemento">
+      <div class="button-container">
+        <button id="addItemBtn">Agregar</button>
+      </div>
+      <ul id="itemList"></ul>
+      <p id="listError" class="error"></p> <!-- Mensaje de error para la lista -->
+    </section>
+    
+    <!-- Contador -->
+    <section>
+      <h2>Contador</h2>
+      <div class="counter">
+        <button id="decrementBtn">-</button>
+        <span id="counterValue">0</span>
+        <button id="incrementBtn">+</button>
+      </div>
+      <p id="counterError" class="error"></p>
+    </section>
+
+    <!-- Galería de Imágenes -->
+    <section class="gallery">
+      <h2>Galería de Imágenes</h2>
+      <img id="galleryImage" src="img1.jpg" alt="Imagen de la galería">
+      <div class="gallery-controls">
+        <button id="prevBtn">Anterior</button>
+        <button id="nextBtn">Siguiente</button>
+      </div>
+    </section>
+    
+    <!-- Modificación de contenido y estilo -->
+    <section>
+      <h2>Cambiar contenido y estilo</h2>
+      <p id="textElement" class="styled-element">Este es un párrafo dinámico.</p>
+      <input type="text" id="textInput" placeholder="Nuevo texto">
+      <div class="button-container">
+        <button id="changeTextBtn">Cambiar texto</button>
+        <button id="changeStyleBtn">Cambiar estilo</button>
+      </div>
+    </section>
+    
+    <!-- Insertar y eliminar elementos -->
+    <section>
+      <h2>Insertar y eliminar elementos</h2>
+      <input type="text" id="newItemInput" placeholder="Nuevo elemento">
+      <div class="button-container">
+        <button id="addItemDynamicBtn">Agregar Elemento</button>
+        <button id="removeLastDynamicBtn">Eliminar último elemento</button>
+      </div>
+      <ul id="dynamicList"></ul>
+    </section>
+
+    <!-- Escuchar eventos -->
+    <section>
+      <h2>Escuchar eventos</h2>
+      <input type="text" id="eventInput" class="input-field" placeholder="Escribe algo...">
+      <p id="eventOutput">Aquí aparecerá el texto ingresado.</p>
+    </section>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
