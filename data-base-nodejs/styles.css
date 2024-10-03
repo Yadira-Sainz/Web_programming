@@ -1,0 +1,114 @@
+/* Estilos generales */
+body { 
+    font-family: 'Arial', sans-serif; 
+    max-width: 800px; 
+    margin: 0 auto; 
+    padding: 20px; 
+    background-color: #f4f4f4; /* Color de fondo */
+    color: #333; 
+}
+
+/* Título principal */
+h1 { 
+    text-align: center; 
+    color: #2A5B6C; /* Color del título */
+    margin-bottom: 30px; 
+}
+
+/* Formularios */
+form { 
+    background: #ffffff; 
+    border-radius: 8px; 
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); 
+    padding: 20px; 
+    margin-bottom: 20px; 
+}
+
+/* Inputs y botones */
+input[type="text"], input[type="number"], button { 
+    width: calc(100% - 22px); /* Ajustar ancho para padding */
+    padding: 10px; 
+    margin: 5px 0; 
+    border: 1px solid #ddd; 
+    border-radius: 5px; 
+    font-size: 16px; 
+}
+
+/* Botón de búsqueda */
+button[type="submit"] { 
+    background-color: #997d60; 
+    color: white; 
+    cursor: pointer; 
+    transition: background-color 0.3s; 
+}
+
+/* Cambiar color de botón al pasar el mouse */
+button[type="submit"]:hover { 
+    background-color: #bca58d; 
+}
+
+/* Lista de libros */
+#listaLibros { 
+    list-style-type: none; 
+    padding: 0; 
+}
+
+/* Elementos de la lista de libros */
+#listaLibros li { 
+    background-color: #ffffff; 
+    margin-bottom: 10px; 
+    padding: 10px; 
+    border-radius: 5px; 
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center; 
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1); 
+}
+
+/* Div para botones de editar y eliminar */
+#listaLibros li div { 
+    display: flex; 
+    gap: 10px; /* Espacio entre botones */
+}
+
+/* Estilos para los botones de editar y eliminar */
+button {
+    background-color: #708160; 
+    color: white; 
+    border: none; 
+    border-radius: 5px; 
+    padding: 5px 10px; 
+    cursor: pointer; 
+    transition: background-color 0.3s; 
+}
+
+/* Cambiar color de botones al pasar el mouse */
+button:hover { 
+    background-color: #A19E84; 
+}
+
+/* Estilo para el botón "Cargar Libros" */
+button:nth-of-type(n+2) {
+    background-color: #B85C48; 
+}
+
+button:nth-of-type(n+2):hover {
+    background-color: #943C24; 
+}
+
+/* Estilo para mensajes de éxito/error (puedes añadir estos elementos en tu HTML) */
+.message {
+    margin: 20px 0; 
+    padding: 10px; 
+    border-radius: 5px; 
+    color: white; 
+    font-weight: bold; 
+}
+
+.success {
+    background-color: #2ecc71; 
+}
+
+.error {
+    background-color: #e74c3c; 
+}
