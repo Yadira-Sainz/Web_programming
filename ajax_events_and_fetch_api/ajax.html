@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Práctica eventos, AJAX y Fetch API</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Buscar Películas</h1>
+
+        <!-- Formulario de búsqueda -->
+        <form id="searchForm">
+            <input type="text" id="searchInput" placeholder="Escribe el título de la película...">
+            <button type="submit">Buscar</button>
+        </form>
+
+        <!-- Sección de resultados -->
+        <div id="results" class="results-section">
+            <ul id="resultList"></ul>
+        </div>
+
+        <!-- Botón de cargar más -->
+        <button id="loadMoreBtn" class="hidden">Cargar más</button>
+
+        <!-- Sección de manejo de errores -->
+        <div id="error" class="error-message hidden"></div>
+
+        <!-- Botones para AJAX y Fetch -->
+        <button id="ajaxBtn">Obtener datos con AJAX</button>
+        <button id="fetchBtn">Obtener datos con Fetch API</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
